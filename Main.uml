@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.company.Main</OriginalElement>
+  <nodes>
+    <node x="244.0" y="-577.0">com.company.Bank</node>
+    <node x="529.0" y="-423.0">com.company.CommercialClient</node>
+    <node x="25.0" y="-400.5">com.company.SpecialAccount</node>
+    <node x="439.5" y="-56.0">com.company.Main</node>
+    <node x="419.33333333333337" y="-1074.0">com.company.Client</node>
+    <node x="164.75" y="-1427.0">com.company.Account</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.SpecialAccount" target="com.company.Account" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="119.5" y="-430.5" />
+      <point x="198.25" y="-430.5" />
+      <point x="-67.0" y="116.5" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.SpecialAccount" relationship="CREATE">
+      <point x="-59.599999999999994" y="-28.0" />
+      <point x="454.4" y="-86.0" />
+      <point x="119.5" y="-86.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.Client" relationship="CREATE">
+      <point x="0.0" y="-28.0" />
+      <point x="514.0" y="-607.0" />
+      <point x="513.3333333333334" y="-607.0" />
+      <point x="0.0" y="193.5" />
+    </edge>
+    <edge source="com.company.CommercialClient" target="com.company.Account" relationship="DEPENDENCY">
+      <point x="47.0" y="-61.5" />
+      <point x="670.0" y="-1164.0" />
+      <point x="332.25" y="-1164.0" />
+      <point x="67.0" y="116.5" />
+    </edge>
+    <edge source="com.company.CommercialClient" target="com.company.Client" relationship="GENERALIZATION">
+      <point x="-47.0" y="-61.5" />
+      <point x="62.666666666666686" y="193.5" />
+    </edge>
+    <edge source="com.company.Bank" target="com.company.Account" relationship="DEPENDENCY">
+      <point x="-21.25" y="-215.5" />
+      <point x="350.25" y="-1104.0" />
+      <point x="670.0" y="-1104.0" />
+      <point x="670.0" y="-1164.0" />
+      <point x="332.25" y="-1164.0" />
+      <point x="67.0" y="116.5" />
+    </edge>
+    <edge source="com.company.Bank" target="com.company.Client" relationship="TO_ONE">
+      <point x="21.25" y="-215.5" />
+      <point x="392.75" y="-607.0" />
+      <point x="435.25" y="-607.0" />
+      <point x="435.25" y="-657.0" />
+      <point x="450.6666666666667" y="-657.0" />
+      <point x="-62.66666666666667" y="193.5" />
+    </edge>
+    <edge source="com.company.Bank" target="com.company.Account" relationship="TO_MANY">
+      <point x="-106.25" y="-215.5" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="com.company.Bank" target="com.company.Client" relationship="TO_MANY">
+      <point x="63.75" y="-215.5" />
+      <point x="435.25" y="-657.0" />
+      <point x="450.6666666666667" y="-657.0" />
+      <point x="-62.66666666666667" y="193.5" />
+    </edge>
+    <edge source="com.company.Bank" target="com.company.Account" relationship="TO_ONE">
+      <point x="-63.75" y="-215.5" />
+      <point x="307.75" y="-1114.0" />
+      <point x="265.25" y="-1114.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="com.company.Client" target="com.company.Account" relationship="TO_ONE">
+      <point x="-47.0" y="-193.5" />
+      <point x="466.33333333333337" y="-1114.0" />
+      <point x="265.25" y="-1114.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.CommercialClient" relationship="CREATE">
+      <point x="29.799999999999997" y="-28.0" />
+      <point x="543.8" y="-96.0" />
+      <point x="623.0" y="-96.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="com.company.Client" target="com.company.Account" relationship="DEPENDENCY">
+      <point x="47.0" y="-193.5" />
+      <point x="560.3333333333334" y="-1104.0" />
+      <point x="670.0" y="-1104.0" />
+      <point x="670.0" y="-1164.0" />
+      <point x="332.25" y="-1164.0" />
+      <point x="67.0" y="116.5" />
+    </edge>
+    <edge source="com.company.Bank" target="com.company.Client" relationship="DEPENDENCY">
+      <point x="106.25" y="-215.5" />
+      <point x="477.75" y="-607.0" />
+      <point x="513.3333333333334" y="-607.0" />
+      <point x="0.0" y="193.5" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.Bank" relationship="CREATE">
+      <point x="-29.799999999999997" y="-28.0" />
+      <point x="484.2" y="-96.0" />
+      <point x="371.5" y="-96.0" />
+      <point x="0.0" y="215.5" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.Account" relationship="CREATE">
+      <point x="59.60000000000002" y="-28.0" />
+      <point x="573.6" y="-86.0" />
+      <point x="732.0" y="-86.0" />
+      <point x="732.0" y="-1104.0" />
+      <point x="670.0" y="-1104.0" />
+      <point x="670.0" y="-1164.0" />
+      <point x="332.25" y="-1164.0" />
+      <point x="67.0" y="116.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.7" showDependencies="true" x="235.64285714285734" y="-784.1428571428573" />
+  <SelectedNodes>
+    <node>com.company.Bank</node>
+    <node>com.company.CommercialClient</node>
+    <node>com.company.SpecialAccount</node>
+    <node>com.company.Main</node>
+    <node>com.company.Client</node>
+    <node>com.company.Account</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
